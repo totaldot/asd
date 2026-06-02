@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link href="../node_modules/bootstrap/package.json" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="p-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="btn btn-outline-light me-2">Главная</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1 class="auth-title">Вход</h1>
+
+            <div class="auth-tabs">
+                <a href="/register" class="auth-tab">Регистрация</a>
+                <button class="auth-tab active">Вход</button>
+            </div>
+
+            <form action="/login" method="POST" class="auth-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" id="username" name="username" placeholder="E-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-input" id="password" name="password" placeholder="Пароль"
+                        required>
+                </div>
+
+                <button type="submit" class="auth-button">Войти</button>
+
+                <div class="auth-links">
+                    <p class="auth-link2">Нет аккаунт? <a href="/register" class="auth-link">Создайте</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
